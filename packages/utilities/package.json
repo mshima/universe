@@ -9,6 +9,16 @@
     "access": "public"
   },
   "repository": "https://github.com/module-federation/universe/tree/main/packages/utilities",
+  "exports": {
+    ".": {
+      "types": "src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./runtime": {
+      "types": "./src/runtime.d.ts",
+      "default": "./src/runtime.js"
+    }
+  },
   "devDependencies": {
     "react": "18.2.0",
     "next": "13.5.4"
